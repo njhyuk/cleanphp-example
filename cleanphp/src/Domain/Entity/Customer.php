@@ -30,5 +30,4 @@ class Customer extends AbstractEntity
         $this->email = $email;
         return $this;
     }
-
 }

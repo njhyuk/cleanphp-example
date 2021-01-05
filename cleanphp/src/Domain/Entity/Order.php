@@ -11,9 +11,6 @@ class Order extends AbstractEntity
     protected string $description;
     protected int $total;
 
-    /**
-     * @return Customer
-     */
     public function getCustomer(): Customer
     {
         return $this->customer;
@@ -57,6 +54,4 @@ class Order extends AbstractEntity
         $this->total = $total;
         return $this;
     }
-
-
 }
