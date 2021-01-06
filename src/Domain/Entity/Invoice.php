@@ -7,7 +7,7 @@ namespace CleanPhp\Invoicer\Domain\Entity;
 class Invoice
 {
     protected Order $order;
-    protected string $invoiceDate;
+    protected \DateTime $invoiceDate;
     protected int $total;
 
     public function getOrder(): Order
@@ -21,12 +21,12 @@ class Invoice
         return $this;
     }
 
-    public function getInvoiceDate(): string
+    public function getInvoiceDate(): \DateTime
     {
         return $this->invoiceDate;
     }
 
-    public function setInvoiceDate(string $invoiceDate): Invoice
+    public function setInvoiceDate(\DateTime $invoiceDate): Invoice
     {
         $this->invoiceDate = $invoiceDate;
         return $this;
