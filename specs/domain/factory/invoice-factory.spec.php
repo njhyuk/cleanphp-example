@@ -14,7 +14,7 @@ describe('InvoiceFactory', function () {
             $factory = new InvoiceFactory();
             $invoice = $factory->createFromOrder($order);
 
-            expect($invoice)->to->be->instanceof('CleanPhp\Invoicer\Domain\Entity\Invoice');
+            expect($invoice)->to->be->instanceof(\CleanPhp\Invoicer\Domain\Entity\Invoice::class);
         });
 
         it('should set the total of the invoice', function () {
@@ -44,7 +44,7 @@ describe('InvoiceFactory', function () {
             $factory = new InvoiceFactory();
             $invoice = $factory->createFromOrder($order);
 
-            expect($invoice->getInvoiceDate())->to->instanceof('\DateTime');
+            expect($invoice->getInvoiceDate())->to->instanceof(\DateTime::class);
         });
     });
 });
