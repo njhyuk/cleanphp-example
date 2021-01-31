@@ -1,11 +1,12 @@
 {
   "autoload": {
     "psr-4": {
-      "CleanPhp\\Invoicer\\": ["src/"]
+      "Application\\": "module/Application/src/"
     }
   },
   "require": {
-    "php": "^7.4"
+    "php": "^7.4",
+    "zendframework/zendframework": "^3.0"
   },
   "require-dev": {
     "peridot-php/peridot": "^1.19",
